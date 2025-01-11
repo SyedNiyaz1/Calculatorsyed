@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhikr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet"> <!-- Add Arabic font -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://i.ibb.co/GnV0ZRz/Leonardo-Anime-XL-A-serene-midnight-landscape-featuring-a-brig-2.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: white;
+    }
+
+    .content {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .text {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      font-family: 'Amiri', serif; /* Use Arabic-specific font */
+    }
+
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      background: none;
+    }
+
+    .button {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      outline: none;
+    }
+
+    .button:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    /* Animation for the flowing text */
+    .flowing-text {
+      position: absolute;
+      bottom: 0; /* Start from the bottom */
+      color: #ffffff;
+      font-size: 24px;
+      font-family: 'Amiri', serif;
+      text-align: center;
+      white-space: nowrap;
+      animation: floatUp 4s linear forwards; /* Use forwards so text stops at the end of the animation */
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200px); /* Move upwards */
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="text">لا إله إلا الله<br> <p style="font-size: 15px;">La Ilaha Illallah<br></p><p style="font-size: 18px;">There is no god but Allah</p></div>
+  </div>
+  <footer>
+    <button class="button" onclick="openDhikr6()">Next page</button>
+  </footer>
+
+  <script>
+    function openDhikr6() {
+      window.location.href = "Dhikr6.html";
+    }
+  </script>
+</body>
+</html>
